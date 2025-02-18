@@ -33,9 +33,10 @@ const Countries = () => {
         <h2>Countries: {countries.length}</h2>
         <div>
             <h2>Visited Countries :  {visitedCountries.length}</h2>
-            <ul>
-
-
+            <ul>{
+            visitedCountries.map(country =>
+                <li key={country.cca3}> {country.name.common}</li> ) 
+}
             </ul>
         </div>
         {/* h3 is also the child of div  and there is actually 2 child/element*/}
